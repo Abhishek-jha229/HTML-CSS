@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.flag{
+    background-color: blue;
+    position: relative;
+}
+
+.vertical{
+    height: 100vh;
+    width: 130px;
+    background-color:blue;
+    margin: auto;
+    position: absolute;
+    left: 40%;
+
+
+}
+
+.horizontal{
+    height: 130px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+}
