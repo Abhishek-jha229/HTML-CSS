@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    max-height: 100%;
+    
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > * {
+    max-width: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(234, 44, 44); 
+    padding: 2rem;
+}
+
+h1{
+    color: white;
+}
+
+.right button{
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+    background-color: rgb(234, 44, 44);
+    color: white;
+    border: none;
+    padding-top: 0.3rem;
+    cursor: pointer;
+}
+
+.search{
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(174, 159, 159);
+}
+
+.searching input{
+    width: 400px;
+    max-width 60%;
+    height: 2.9rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    
+}
+
+.search_button{
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    background-color:rgb(234, 44, 44); 
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: px;
+    
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+    
+}
+.hero>img {
+    max-width: 80%;
+    border-radius: 10px;
+    
+}
+
+.popular{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card{
+    border: 0.5rem solid rgb(199, 184, 184);
+    background-color: rgb(199, 184, 184);
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+
+.movie{
+    display: flex;
+    overflow-x: scroll;
+    width: 1oo%;
+}
+
+.images{
+    height: 400px;
+}
+
+.card>h3{
+    font-size: 2rem;
+}
+
+@media ( max-width:650px)
+{
+
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .movie{
+        flex-direction: column;
+    }
+}
